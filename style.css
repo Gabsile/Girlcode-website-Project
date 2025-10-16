@@ -7,6 +7,11 @@
   
 }
 
+/* Use Inter for the whole site */
+html, body, * {
+  font-family: 'Inter', sans-serif !important;
+}
+
 /* Logo */
 .GirlCode-header .logo img {
   height: 60px;
@@ -25,7 +30,6 @@
 .header-nav a {
   text-decoration: none;
   color: #070606;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -64,7 +68,7 @@
 
 .hero-text h1 {
   font-size: 48px;
-  color: #d63384; 
+  color: #e63946; 
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -107,7 +111,6 @@
 }
 
 .partners-section h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: #d63384;
@@ -186,4 +189,112 @@
     animation-duration: 24s;
   }
 }
+
+.become-partners-section {
+  display: flex;
+  align-items: center; /* vertically center columns */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 60px 8%;
+  background-color: #fff;
+  gap: 40px;
+}
+
+/* LEFT SIDE: TEXT */
+.become-partners-content {
+  flex: 0 0 45%; /* wider left column */
+  max-width: 520px;
+}
+
+.become-partners-content h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  white-space: nowrap; /* keep on one line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* show ellipsis if it doesn't fit */
+}
+
+.become-partners-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background-color: #e63946;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  margin-top: 20px; /* space under paragraph */
+  align-self: flex-start; /* keep button left-aligned within left column */
+}
+
+.learn-more-btn:hover {
+  background-color: #c92c3a;
+}
+
+/* RIGHT SIDE: LOGOS GRID */
+.become-partners-logos {
+  flex: 0 0 45%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+  align-items: center;
+  justify-items: end; /* align logos to the right */
+  align-content: center; /* center the grid vertically within the column */
+}
+
+.become-partners-image {
+  max-width: 160px; /* larger logos to match screenshot */
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(5%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.become-partners-image:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .become-partners-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .become-partners-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .become-partners-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .become-partners-content h2 {
+    font-size: 1.8rem;
+  }
+  .become-partners-logos {
+    justify-items: center;
+  }
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
 
