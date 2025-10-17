@@ -1,4 +1,5 @@
-
+/* The styling of the beginning of our website, we styled everything step by step*/
+/* Some of our members used # some used a full stop when styling, however what is important is the div or section */
 .GirlCode-header {
   display: flex;
   justify-content: space-between;
@@ -50,7 +51,7 @@ html, body, * {
   }
 }
 
-/* ===== HERO SECTION ===== */
+/* Picture of the lady on our website */
 .hero {
   display: flex;
   align-items: center;
@@ -98,6 +99,8 @@ html, body, * {
     margin-top: 20px;
   }
 }
+
+/* Partnership section, where the images are moving from right to left*/
 
 .partners-section {
   background-color: #f3f3f3;
